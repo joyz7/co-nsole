@@ -9,7 +9,7 @@ body {
 }
 
 .background-image {
-    background-image: url('./low.png');
+    background-image: url('./1.png');
     background-size: cover;
     background-repeat: no-repeat;
     height:100vh;
@@ -17,10 +17,8 @@ body {
 }
 
 .logo {
-    height: 50px;
-    width: 50px;
-    text-align: left;
-    /* left align*/
+    height: 100%;
+    width: 100%;
     margin: 5px;
 }
 
@@ -66,7 +64,6 @@ button:hover {
     border: none;
     outline: none;
     text-decoration: none;
-
 }
 
 #get-started:hover {
