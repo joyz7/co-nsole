@@ -64,14 +64,13 @@ function getResponse() {
     }
 
     if (userText == "There are a few things you can do to try and improve your situation. First, try to talk to your professors and see if you can work out a plan to get back on track. Second, try to find a tutor or study group to help you with the material. Finally, try to reduce your stress levels in general by exercising, getting enough sleep, and finding time to relax.") {
-        document.querySelector('.background').setAttribute(background-image, url('./4.png'));
+        document.querySelector('.background-image').style.background="url('images/4.png')";
     } else if (userText == "If you're still struggling after talking to counselors, it might be time to talk to a therapist. A therapist can help you work through your issues and develop coping skills.") {
-        document.querySelector('.background').setAttribute(background-image, url('./3.png'));
+        document.querySelector('.background-image').style.background="url('images/3.png')";
     } else if (userText == "It may be time to try something else. Maybe you could try talking to a different therapist, or maybe you could try a different type of therapy.") {
-        document.querySelector('.background').setAttribute(background-image, url('./3.png'));
-
+        document.querySelector('.background-image').style.background="url('images/2.png')";
     } else if (userText == "Stop worrying, you're thinking too far in advance.") {
-        document.querySelector('.background').setAttribute(background-image, url('./1.png'));
+        document.querySelector('.background-image').style.background="url('images/1.png')";
     }
 
     let userHtml = '<p class="userText"><span>' + userText + '</span></p>';
