@@ -27,7 +27,7 @@ function colorButton() {
 }
 */
 
-pressButton(type) {
+function pressButton(type) {
     if (type = "helpline") {
         helplineStatus = true;
         hrStatus = "false";
@@ -49,7 +49,7 @@ pressButton(type) {
         leadershipStatus = "false";
         friendStatus = "true";
     }
-}
+};
 
 main();
 
