@@ -1,3 +1,4 @@
+
 let situation
 const roles = document.querySelector('.role');
 const helpline = document.querySelector('#helpline');
@@ -77,4 +78,3 @@ function main() {
 
     
 }
-
