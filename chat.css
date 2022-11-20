@@ -1,10 +1,20 @@
 .body{
     font-family: "Poppins", sans-serif;
-    text-align: left;
 }
 
-#back {
+.scene-title {
     text-align: left;
+    padding-left: 20px;
+    color: white;
+    position: fixed;
+}
+
+.scene-name {
+    text-align: left;
+    padding-top: 40px;
+    padding-left: 20px;
+    color: white;
+    position: fixed;
 }
 
 .chat-bar-collapsible {
@@ -86,8 +96,11 @@
     font-size: 20px;
 }
 
-#chat-icon:hover {
-    opacity: .7;
+#send-message-btn { 
+    border-radius: 10px;
+    padding: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
 }
 
 /* Chat bubbles */

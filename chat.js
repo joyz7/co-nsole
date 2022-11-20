@@ -1,4 +1,5 @@
 
+const sendBtn = document.getElementById("send-message-btn");
 var coll = document.getElementsByClassName("collapsible");
 
 for (let i = 0; i < coll.length; i++) {
@@ -60,7 +61,7 @@ function getResponse() {
     let userText = $("#textInput").val();
 
     if (userText == "") {
-        userText = "I love Code Palace!";
+        getResponse();
     }
 
     let userHtml = '<p class="userText"><span>' + userText + '</span></p>';
@@ -98,4 +99,9 @@ $("#textInput").keypress(function (e) {
     if (e.which == 13) {
         getResponse();
     }
+});
+
+
+sendBtn.addEventListener('click', function() {
+    getResponse();
 });

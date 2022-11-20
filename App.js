@@ -4,7 +4,7 @@ const helpline = document.getElementById('helpline');
 const hr = document.getElementById('hr');
 const leadership = document.getElementById('leadership');
 const friend = document.getElementById('friend');
-const color = ['#FFFFFF', '#dddedf']
+const color = ['#FFFFFF', '#616161']
 let helplineStatus = "false";
 let hrStatus = "false";
 let leadershipStatus = "false";
@@ -32,7 +32,7 @@ function pressButton(type) {
         helpline.style.backgroundColor = color[1];
         hr.style.backgroundColor = color[0];
         leadership.style.backgroundColor = color[0];
-        color.style.backgroundColor = color[0];
+        friend.style.backgroundColor = color[0];
         
         helplineStatus = "true";
         hrStatus = "false";
@@ -45,7 +45,7 @@ function pressButton(type) {
         helpline.style.backgroundColor = color[0];
         hr.style.backgroundColor = color[1];
         leadership.style.backgroundColor = color[0];
-        color.style.backgroundColor = color[0];
+        friend.style.backgroundColor = color[0];
 
         helplineStatus = "false";
         hrStatus = "true";
@@ -58,7 +58,7 @@ function pressButton(type) {
         helpline.style.backgroundColor = color[0];
         hr.style.backgroundColor = color[0];
         leadership.style.backgroundColor = color[1];
-        color.style.backgroundColor = color[0];
+        friend.style.backgroundColor = color[0];
         
         helplineStatus = "false";
         hrStatus = "false";
@@ -71,7 +71,7 @@ function pressButton(type) {
         helpline.style.backgroundColor = color[0];
         hr.style.backgroundColor = color[0];
         leadership.style.backgroundColor = color[0];
-        color.style.backgroundColor = color[1];
+        friend.style.backgroundColor = color[1];
         
         helplineStatus = "false";
         hrStatus = "false";
