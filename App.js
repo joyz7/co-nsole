@@ -1,9 +1,9 @@
 let situation
-const roles = document.querySelector('.role');
-const helpline = document.querySelector('#helpline');
-const hr = document.querySelector('#hr');
-const leadership = document.querySelector('#leadership');
-const friend = document.querySelector('#friend');
+//const roles = document.querySelector('.role');
+const helpline = document.getElementById('helpline');
+const hr = document.getElementById('hr');
+const leadership = document.getElementById('leadership');
+const friend = document.getElementById('friend');
 const color = ['#FFFFFF', '#dddedf']
 let helplineStatus = "false";
 let hrStatus = "false";
@@ -27,27 +27,57 @@ function colorButton() {
 }
 */
 
-pressButton(type) {
-    if (type = "helpline") {
-        helplineStatus = true;
+function pressButton(type) {
+    if (type == "helpline") {
+        helpline.style.backgroundColor = color[1];
+        hr.style.backgroundColor = color[0];
+        leadership.style.backgroundColor = color[0];
+        color.style.backgroundColor = color[0];
+        
+        helplineStatus = "true";
         hrStatus = "false";
         leadershipStatus = "false";
         friendStatus = "false";
-    } else if (type = "hr") {
-        helplineStatus = false;
+        console.log("helpline");
+    } 
+    
+    if (type == "hr") {
+        helpline.style.backgroundColor = color[0];
+        hr.style.backgroundColor = color[1];
+        leadership.style.backgroundColor = color[0];
+        color.style.backgroundColor = color[0];
+
+        helplineStatus = "false";
         hrStatus = "true";
         leadershipStatus = "false";
         friendStatus = "false";
-    } else if (type = "leadership") {
-        helplineStatus = false;
+        console.log("hr");
+    } 
+    
+    if (type == "leadership") {
+        helpline.style.backgroundColor = color[0];
+        hr.style.backgroundColor = color[0];
+        leadership.style.backgroundColor = color[1];
+        color.style.backgroundColor = color[0];
+        
+        helplineStatus = "false";
         hrStatus = "false";
         leadershipStatus = "true";
         friendStatus = "false";
-    } else if (type = "friend") {
-        helplineStatus = false;
+        console.log("leadership");
+    } 
+    
+    if (type == "friend") {
+        helpline.style.backgroundColor = color[0];
+        hr.style.backgroundColor = color[0];
+        leadership.style.backgroundColor = color[0];
+        color.style.backgroundColor = color[1];
+        
+        helplineStatus = "false";
         hrStatus = "false";
         leadershipStatus = "false";
         friendStatus = "true";
+        console.log("friend");
     }
 }
 
@@ -56,25 +86,20 @@ main();
 function main() {
 
     helpline.addEventListener('click', function() {
-        document.querySelector('#helpline').style.background = color[1];
         pressButton("helpline");
     });
 
     hr.addEventListener('click', function() {
-        document.querySelector('#hr').style.background = color[1];
         pressButton("hr");
     });
     
     leadership.addEventListener('click', function() {
-        document.querySelector('#leadership').style.background = color[1];
-        pressButton("hr");
+        pressButton("leadership");
     });
 
     friend.addEventListener('click', function() {
-        document.querySelector('#friend').style.background = color[1];
-        pressButton("hr");
+        pressButton("friend");
     });
-
     
 }
 

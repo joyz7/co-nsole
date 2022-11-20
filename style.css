@@ -6,7 +6,7 @@ body {
 	margin: 20px auto;
 	padding: 5px;
 }
-
+/*
 #hr {
 	background: white;
 	color: black;
@@ -17,6 +17,7 @@ body {
 	font-size: 13px;
 	font-family: inherit;
 }
+*/
 
 .generalbutton {
 	background: white;
@@ -29,11 +30,13 @@ body {
 	font-family: inherit;
 }
 
-/* FIX THIS
-.generalbutton :hover {
+
+button:hover {
+    background-color: black;
+    color: white;
     opacity: .7;
 }
-*/
+
 
 #get-started {
     font-size: 1.5em;
