@@ -1,4 +1,3 @@
-let situation
 //const roles = document.querySelector('.role');
 const helpline = document.getElementById('helpline');
 const hr = document.getElementById('hr');
@@ -102,4 +101,3 @@ function main() {
     });
     
 }
-
