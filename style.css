@@ -1,15 +1,30 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap");
 body {
-	background-image: url("background.png");
-	background-size: cover;
-	background-repeat: no-repeat;
 	font-family: "Poppins", sans-serif;
+    color:white;
 	box-sizing: border-box;
 	text-align: center;
-	margin: 20px auto;
-	padding: 5px;
+	margin: 0px auto;
+	padding: 0px;
 }
 
+.background-image {
+    background-image: url('./images/1.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height:100vh;
+    border: 0;
+}
+
+.logo {
+    height: 50px;
+    width: 50px;
+    text-align: left;
+    /* left align*/
+    margin: 5px;
+}
+
+/*
 #hr {
 	background: white;
 	color: black;
@@ -20,32 +35,61 @@ body {
 	font-size: 13px;
 	font-family: inherit;
 }
-
-.subheading {
-	font-size: 25px;
-	text-shadow: 2px 2px lightblue;
-	padding: 20px;
-}
+*/
 
 .generalbutton {
 	background: white;
 	color: black;
 	border: solid 1px;
 	margin: 2px;
-	padding: 15px;
+    padding: 7px;
+    margin-bottom: 20px;
+    width: 200px;
 	border-radius: 5px;
 	cursor: pointer;
+	font-size: 13px;
 	font-family: inherit;
 }
 
-.empty-prompt {
-	text-shadow: 1px 1px white;
+
+button:hover {
+    background-color: black;
+    color: white;
+    opacity: .7;
+}
+
+
+#get-started {
+    font-size: 1.5em;
+    font-family: inherit;
+    color: whitesmoke;
+    border: none;
+    outline: none;
+    text-decoration: none;
+
+}
+
+#get-started:hover {
+    opacity: .7;
 }
 
 .app-title {
-	font-size: 35px;
+    font-size: 5em;
+    padding-top: 0.7em;
 }
 
-.blankspace {
-	padding: 100px;
+.app-slogan {
+    font-size: 1.25em;
+}
+
+.messages {
+	display: flex;
+	flex-direction: column;
+	overflow: scroll;
+	height: 90%;
+	width: 100%;
+	background-color: white;
+	padding: 15px;
+	margin: 15px;
+	border-radius: 10px;
 }
